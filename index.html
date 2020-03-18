@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang= "en" >
+    <head>
+        <meta charset = "UTF-8">
+        <title>HTML Refferences</title>
+        <!-- in base tag we use resource link then in body resources from that link can be called by path. -->
+        <base href = "http://www.tutorialspoint.com" />
+        <!--<style type="text/css">
+            table, th{
+                border: 1px solid #7FFFD4;
+                text-align: center;
+                padding: 3px;
+            }
+
+            table{
+                 margin-right: auto;
+                 margin-left: auto;
+                 margin-top: auto;
+                 margin-bottom: auto;
+            }
+         
+            th{
+                background-color: #7FFFD4;
+            }
+            td{
+                background-color: #DCDCDC;
+                column-width: 70%;
+                text-align: left;
+            }
+            
+        </style>-->
+        <style>
+            #customers {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            #customers td, #customers th {
+                border: 1px solid #bfbfbf;
+                padding: 8px;
+            }
+
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+            #customers tr:hover {background-color: #ddd;}
+
+            #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #00cc99;
+                color: white;
+            }
+
+            .heading{
+                background-color: #00b386;
+                color: white;
+                width: 100%;
+                padding: 1px;
+                text-align: center;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <div class="heading">
+            <h2>HTML Refferences with Examples</h2>
+
+        </div>
+        <table id="customers">
+                 <tr>
+                <th>Tag</th>
+                <th>Defines</th>
+                <th>Code</th>
+                <th>Output</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <a>< !--.......--></a>
+                   <!-- <p>< !--....-- </p> -->
+                </td>
+                <td>Comment</td>
+                <td>< !--This is a comment in HTML-- ></td>
+                <td>Hide it. Won't Print.</td>
+            </tr>
+            <tr>
+                <td> /*......*/ </td>
+                <td>  Comment  </td>
+                <td><a> /*This is a comment in CSS.*/ </a></td>
+                <td>Hide it. Won't Print.</td>
+            </tr>
+            <tr>
+                <td>< !DOCTYPE></td>
+                <td>  Document Type  </td>
+                <td>< !DOCTYPE html ></td>
+                <td>It is a HTML5 document </td>
+            </tr>
+            <tr>
+                <td><  a ></td>
+                <td> Hyperlink </td>
+                <td>< a href="www.google.com"> Google < / a ></td>
+                <td><a href="www.google.com">Google</a></td>
+                
+            </tr>
+            <tr>
+                <td>< abbr ></td>
+                <td> Abbreviation or acronym (Organization Name).<br> Show full name during hovering. </td>
+                <td>< abbr title="World Health Organization" > WHO < /abbr ></td>
+                <td> <abbr title="World Health Organization">WHO</abbr>  </td>
+            </tr>
+            <tr>
+                 <td>< address ></td>
+                 <td>Contact information of the author/owner <br>of a document or an article. Used in footer as email, phone no info.</td>
+                 <td>< address>
+                    Written by< a href="mailto:webmaster@example.com"> 
+                    Jon Doe< /a>.< br>
+                    Visit us at:< br>
+                    Example.com
+                 < /address>
+                    
+                 </td>
+                 <td>
+                    <address>
+                        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                        Visit us at:<br>
+                        Example.com<br>
+                 </address>
+                </td>
+            </tr>
+            <tr>
+                 <td>< area ></td>
+                 <td>
+                    The < area> tag defines an area inside an image-map <br>(an image-map is an image with clickable areas).The < area> <br>element is always nested inside a < map> tag.
+                 </td>
+                 <td>
+                    < img src = /images/usemap.gif alt = "usemap" border = "0" usemap = "#tutorials"/> 
+                    <br> 
+                    < map name = "tutorials"><br>
+                    < area shape = "poly" coords = "74,0,113,29,98,72,52,72,38,27" <br>
+                    href = "/perl/index.htm"<br> alt = "Perl Tutorial" target = "_blank" /><br>
+         
+                    < area shape = "rect" coords = "22,83,126,125" alt = "HTML Tutorial" <br>
+                    href = "/html/index.htm" target = "_blank" /><br>
+         
+                    < area shape = "circle" coords = "73,168,32" alt = "PHP Tutorial" <br>
+                    href = "/php/index.htm" target = "_blank" /><br>
+                  < /map>
+                 </td>
+                 <td> 
+                    <img src = "https://www.tutorialspoint.com/images/usemap.gif" alt = "usemap" border = "0" usemap = "#tutorials"/>  
+                    <map name = "tutorials">
+                    <area shape = "poly" coords = "74,0,113,29,98,72,52,72,38,27"
+                    href = "https://www.tutorialspoint.com/perl/index.htm" alt = "Perl Tutorial" target = "_blank" />
+          
+                    <area shape = "rect" coords = "22,83,126,125" alt = "HTML Tutorial"
+                    href = "https://www.tutorialspoint.com/html/index.htm" target = "_blank" />
+         
+                    <area shape = "circle" coords = "73,168,32" alt = "PHP Tutorial"
+                    href = "https://www.tutorialspoint.com/php/index.htm" target = "_blank" />
+                    </map>
+              </td>
+            </tr>
+            <tr>
+                 <td>< article ></td>
+                 <td>Specifies independent, self-contained content.<br> An article should make sense on its own <br>and it should be possible to distribute it independently <br>from the rest of the site.<br> Exm: Forum post, Blog post, News story, Comment.
+                 </td>
+                 <td>
+                    < article><br>
+                        < h2>Google Chrome< /h2><br>
+                        < p>Google Chrome is a web browser developed by Google,<br> released in 2008. Chrome is the world's<br> most popular web browser today!< /p>
+                    < /article>
+                 </td>
+                 <td>
+                    <article>
+                        <h2>Google Chrome</h2>
+                        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                 </td>
+            </tr>
+            <tr>
+                 <td>< aside ></td>
+                 <td>Defines some content aside from the content it is placed in.</td>
+                 <td>
+                    < p>My family and I visited The Epcot center this summer. <br>The weather was nice, and Epcot was amazing!<br> I had a great summer together with my family!< /p><br>
+                    < aside><br>
+                        < h4>Epcot Center< /h4><br>
+                        < p>Epcot is a theme park at <br>Walt Disney World Resort featuring<br> exciting attractions, international pavilions, award-winning<br> fireworks and seasonal special events.< /p><br>
+                    < /aside>
+                 </td>
+                 <td>
+                    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+                    <aside>
+                        <h4>Epcot Center</h4>
+                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                    </aside>
+                 </td>
+            </tr>
+            <tr>
+                 <td>< audio ></td>
+                 <td>Defines sound, such as music or other audio streams.</td>
+                 <td>
+                    < p>Click on the play button to play a sound:< /p>
+                    < audio controls>
+                        < source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    < /audio>
+                 </td>
+                 <td>
+                    <p>Click on the play button to play a sound:</p>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                 </td>
+            </tr>
+            <tr>
+                 <td>< b ></td>
+                 <td>Bold Text</td>
+                 <td>< b>This is a bold text< /b></td>
+                 <td><b>This is a bold text</b></td>
+            </tr>
+            <tr>
+                 <td>< base ></td>
+                 <td>Specifies the base URL/target for all relative URLs in a document. Should be declare inside head. Base target has blank, parent, self, top values. Specifies the default target for all hyperlinks and forms in the page</td>
+                 <td>HTML: < img src = "/images/html.gif" /></td>
+                 <td>HTML: <img src = "/images/html.gif" /></td>
+            </tr>
+            <tr>
+                 <td>< bdi ></td>
+                 <td>BDI stands for Bi-Directional Isolation. The < bdi> tag isolates a part of text that might be formatted in a different direction from other text outside it. This element is useful when embedding user-generated content with an unknown directionality.</td>
+                 <td>< p dir="ltr">This arabic word < bdi>ARABIC_PLACEHOLDER< /bdi> is automatically displayed right-to-left. User < bdi>إيان< </ bdi>: 90 points< /p></td>
+                 <td><p dir="ltr">This arabic word <bdi>ARABIC_PLACEHOLDER</bdi> is automatically displayed right-to-left.User <bdi>إيان</bdi>: 90 points</p></td>
+            </tr>
+            <tr>
+                 <td>< bdo ></td>
+                 <td>Overrides the current text direction</td>
+                 <td>< p>< bdo dir="rtl">This paragraph will go right-to-left.< /bdo>< /p></td>
+                 <td><p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p></td>
+            </tr>
+            <tr>
+                 <td>< blockquote ></td>
+                 <td>The < blockquote> tag specifies a section that is quoted from another source.</td>
+                 <td>
+                    < p>Quote from WWF:< /p>
+                    < blockquote cite="http://www.worldwildlife.org/who/index.html">
+                    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries.
+                 < /blockquote>
+                </td>
+                <td>
+                    <p>Quote from WWF:</p>
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries.
+                 </blockquote>
+                </td>
+            </tr>
+            <tr>
+                 <td>< body ></td>
+                 <td>Defines the document's body</td>
+                 <td>
+                    < body>Content of body.< /body>
+                 </td>
+                 <td>
+                    <body>Content of body.</body>
+                 </td>
+            </tr>
+            <tr>
+                 <td>< br ></td>
+                 <td>Defines a single line break</td>
+                 <td>
+                    < p>To force line breaks< br> in a text, use the br< br> element.< /p>
+                 </td>
+                 <td>
+                    <p>To force line breaks<br> in a text, use the br<br> element.</p>
+                 </td>
+            </tr>
+            <tr>
+                 <td>< button ></td>
+                 <td>Defines a clickable button</td>
+                 <td>
+                    < button type="button">Click Me!< /button>
+                 </td>
+                 <td>
+                    <button type="button">Click Me!</button>
+                 </td>
+            </tr>
+            <tr>
+                 <td>< caption ></td>
+                 <td>Defines table caption</td>
+                 <td>< caption>Monthly savings< /caption></td>
+                 <td><p>Monthly savings</p></td>
+            </tr>
+            <tr>
+                 <td>< cite ></td>
+                 <td>Defines title of work. Exp: Created by Mr John.</td>
+                 <td>
+                    < img src="https://www.w3schools.com/tags/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+                    < p>< cite>The Scream< /cite> by Edward Munch. Painted in 1893.< /p>
+                  </td>
+                  <td>
+                    <img src="https://www.w3schools.com/tags/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+                    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+                </td>
+            </tr>
+            <tr>
+                 <td>< code ></td>
+                 <td>Defines a piece of computer code</td>
+                 <td>
+                    < em>Emphasized text< /em>< br>
+                    < strong>Strong text< /strong>< br>
+                    < code>A piece of computer code< /code>< br>
+                    < samp>Sample output from a computer program< /samp>< br>
+                    < kbd>Keyboard input< /kbd>< br>
+                    < var>Variable< /var>
+                </td>
+                <td>
+                    <em>Emphasized text</em><br>
+                    <strong>Strong text</strong><br>
+                    <code>A piece of computer code</code><br>
+                    <samp>Sample output from a computer program</samp><br>
+                    <kbd>Keyboard input</kbd><br>
+                    <var>Variable</var>
+                </td>
+            </tr>
+            <tr>
+                 <td>< col > & < colgroup ></td>
+                 <td>< col > Specifies column properties for each column within a < colgroup> element< colgroup>  Specifies a group of one or more columns in a table for formattingUseful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.</td>
+                 <td>
+                    < table>
+                        < colgroup>
+                            < col span="2" style="background-color:red">
+                            < col style="background-color:yellow">
+                        < /colgroup>
+                        < tr>
+                            < th>ISBN< /th>
+                            < th>Title< /th>
+                            < th>Price< /th>
+                        < /tr>
+                        < tr>
+                            < td>3476896< /td>
+                            < td>My first HTML< /td>
+                            < td>$53< /td>
+                        < /tr>
+                    < /table>
+                    </td>
+                    <td><img src="table.jpg" alt="Italian Trulli" style="width:128px;height:128px;"></td>
+                    
+            </tr>
+            <!--
+            <tr>
+                 <td>< colgroup ></td>
+            </tr>
+            
+            <tr>
+                 <td>< data ></td>
+            </tr>
+            <tr>
+                 <td>< datalist ></td>
+            </tr>
+            <tr>
+                 <td>< dd ></td>
+            </tr>
+            <tr>
+                 <td>< del ></td>
+            </tr>
+            <tr>
+                 <td>< details ></td>
+            </tr>
+            <tr>
+                 <td>< dfn ></td>
+            </tr>
+            <tr>
+                 <td>< dialogue ></td>
+            </tr>
+            <tr>
+                 <td>< div ></td>
+            </tr>
+            <tr>
+                 <td>< dl ></td>
+            </tr>
+            <tr>
+                 <td>< dt ></td>
+            </tr>
+            <tr>
+                 <td>< em ></td>
+            </tr>
+             <tr>
+                 <td>< embed ></td>
+            </tr>
+            <tr>
+                 <td>< fieldset ></td>
+            </tr>
+            <tr>
+                 <td>< figcaption ></td>
+            </tr>
+            <tr>
+                 <td>< figure ></td>
+            </tr>
+             <tr>
+                 <td>< footer ></td>
+            </tr>
+            <tr>
+                 <td>< form ></td>
+            </tr>
+            <tr>
+                 <td>< h1 > to < h6 ></td>
+            </tr>
+            <tr>
+                 <td>< header ></td>
+            </tr>
+             <tr>
+                 <td>< hr ></td>
+            </tr>
+            <tr>
+                 <td>< html ></td>
+            </tr>
+            <tr>
+                 <td>< i ></td>
+            </tr>
+            <tr>
+                 <td>< iframe ></td>
+            </tr>
+            <tr>
+                 <td>< img ></td>
+            </tr>
+            <tr>
+                 <td>< input ></td>
+            </tr>
+            <tr>
+                 <td>< ins ></td>
+            </tr>
+            <tr>
+                 <td>< kbd ></td>
+            </tr>
+            <tr>
+                 <td>< label ></td>
+            </tr>
+            <tr>
+                 <td>< legend ></td>
+            </tr>
+            <tr>
+                 <td>< li ></td>
+            </tr>
+            <tr>
+                 <td>< link ></td>
+            </tr>
+            <tr>
+                 <td>< main ></td>
+            </tr>
+            <tr>
+                 <td>< map ></td>
+            </tr>
+            <tr>
+                 <td>< mark ></td>
+            </tr>
+            <tr>
+                 <td>< meta ></td>
+            </tr>
+            <tr>
+                 <td>< meter ></td>
+            </tr>
+            <tr>
+                 <td>< nav ></td>
+            </tr>
+            <tr>
+                <td> noscript </td>
+            </tr>
+            <tr>
+                 <td>< object ></td>
+            </tr>
+            <tr>
+                 <td>< ol ></td>
+            </tr>
+            <tr>
+                 <td>< optgroup ></td>
+            </tr>
+            <tr>
+                 <td>< option ></td>
+            </tr>
+            <tr>
+                 <td>< output ></td>
+            </tr>
+            <tr>
+                 <td>< p ></td>
+            </tr>
+            <tr>
+                 <td>< param ></td>
+            </tr>
+            <tr>
+                 <td>< picture ></td>
+            </tr>
+            <tr>
+                 <td>< p ></td>
+            </tr>
+            <tr>
+                 <td>< progress ></td>
+            </tr>
+            <tr>
+                 <td>< q ></td>
+            </tr>
+            <tr>
+                 <td>< rp ></td>
+            </tr>
+            <tr>
+                 <td>< rt ></td>
+            </tr>
+            <tr>
+                 <td>< ruby ></td>
+            </tr>
+            <tr>
+                 <td>< s ></td>
+            </tr>
+            <tr>
+                 <td>< samp ></td>
+            </tr>
+            <tr>
+                 <td>< script ></td>
+            </tr>
+            <tr>
+                 <td>< section ></td>
+            </tr>
+            <tr>
+                 <td>< select ></td>
+            </tr>
+            <tr>
+                 <td>< small ></td>
+            </tr>
+            <tr>
+                 <td>< source ></td>
+            </tr>
+            <tr>
+                 <td>< span ></td>
+            </tr>
+            <tr>
+                 <td>< strong ></td>
+            </tr>
+            <tr>
+                 <td>< style ></td>
+            </tr>
+            <tr>
+                 <td>< sub ></td>
+            </tr>
+            <tr>
+                 <td>< summary ></td>
+            </tr>
+            <tr>
+                 <td>< sup ></td>
+            </tr>
+            <tr>
+                 <td>< svg ></td>
+            </tr>
+            <tr>
+                 <td>< table ></td>
+            </tr>
+            <tr>
+                 <td>< tbody ></td>
+            </tr>
+             <tr>
+                 <td>< td ></td>
+            </tr>
+            <tr>
+                 <td>< template ></td>
+            </tr>
+            <tr>
+                 <td>< textarea ></td>
+            </tr>
+            <tr>
+                 <td>< tfoot ></td>
+            </tr>
+            <tr>
+                 <td>< th ></td>
+            </tr>
+            <tr>
+                 <td>< thead ></td>
+            </tr>
+            <tr>
+                 <td>< time ></td>
+            </tr>
+            <tr>
+                 <td>< title ></td>
+            </tr>
+            <tr>
+                 <td>< tr ></td>
+            </tr>
+            <tr>
+                 <td>< track ></td>
+            </tr>
+            <tr>
+                 <td>< u ></td>
+            </tr>
+            <tr>
+                 <td>< ul ></td>
+            </tr>
+            <tr>
+                 <td>< var ></td>
+            </tr>
+            <tr>
+                 <td>< video ></td>
+            </tr>
+            <tr>
+                 <td>< wbr ></td>
+            </tr>
+            -->
+        </table>
+        <div class="heading">
+            <i>copyright @ Tamzida Azad</i>
+            
+        </div>
+        
+    </body>
+
+
+</html>
